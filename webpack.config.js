@@ -3,10 +3,8 @@ const path = require("path");
 module.exports = {
   entry: path.join(__dirname, "src", "index.js"),
   output: {
-    filename: "bundle.js",
-    path: "/",
-    // path: path.resolve(__dirname, 'dist'),
-    // filename: 'main.js',
+    path: path.resolve(__dirname, "public"),
+    filename: "main.js",
   },
   mode: "development",
   // How it will run
